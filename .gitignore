@@ -1,0 +1,11 @@
+# ignore all htmls
+*.html
+*.htm
+# ignore all objects file
+*.o
+*.d
+*.crf
+*.axf
+# ignore listings and maps
+*.lst
+*.map

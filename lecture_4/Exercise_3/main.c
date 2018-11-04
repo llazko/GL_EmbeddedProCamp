@@ -33,8 +33,16 @@ int Status()
   * 
   * Check status before Put.
   */
-void Put(int val)
+int Put(int val)
 {
+	int st;
+	st = Status();
+	if ((st == -1) || st == depth)
+	{
+		printf("PUT Error \n");
+		return -1;
+	}
+
     fifo[wrptr] = val;
     if (wrptr != depth - 1)
     {
@@ -57,6 +65,15 @@ void Put(int val)
 int Get()
 {
     int val = fifo[rdptr];
+	int st;
+	st = Status();
+
+	if ((st == -1) || st == 0)
+	{
+		printf("GET Error \n");
+		return -1;
+	}
+
     if (rdptr != depth - 1)
     {
         rdptr++;

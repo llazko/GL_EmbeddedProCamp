@@ -10,7 +10,11 @@ char dest[12] = "abracadabra";
   */
 void CopyStr(char * dest, char * source,int n) 
 {
-    strncpy(dest,source,n);
+	int i;
+    for(i=0;i<n;i++)
+	{
+		dest[i] = source[i];
+	}
     dest[n]='\0'; /*0 terminator correctly close the string*/
 }
 
@@ -18,7 +22,7 @@ void CopyStr(char * dest, char * source,int n)
 int main()
 {
 
-    CopyStr(&dest, &source,sizeof(source)-1);
+    CopyStr(dest, source, sizeof(source)-1);
     printf("%s\n",dest); 
     return 0;
     

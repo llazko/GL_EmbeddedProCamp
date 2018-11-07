@@ -1,0 +1,4 @@
+load STM32F303VCTx 
+project name STCubeGenerated 
+project toolchain "MDK-ARM V5" 
+project path "F:\llz\myprojects\STM32_projects\GL_EmbeddedProCamp\lecture_10\Exercise_1\RTE\Device\STM32F303VCTx\" 

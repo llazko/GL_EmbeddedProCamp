@@ -1,0 +1,5 @@
+FreeRTOS on MCU
+
+1. Download and install Keil
+2. Download and install STM32CubeMX
+3. Create FreeRTOS project and compile

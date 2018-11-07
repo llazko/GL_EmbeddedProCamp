@@ -1,0 +1,5 @@
+RTOS Resource Management
+
+1. Create project to demonstrate critical section.
+2. Create project to demonstrate scheduler suspend.
+3. Create project to demonstrate mutex usage.

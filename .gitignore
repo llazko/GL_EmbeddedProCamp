@@ -9,3 +9,5 @@
 # ignore listings and maps
 *.lst
 *.map
+# ignore std library files
+/lecture_1/Libraries/*
